@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,23 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+body {
+  background-color: aqua;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.calculator {
+  position: relative;
+  height: 100%;
+  width: 100vh;
+}
+.cal{
+  position: absolute;
+  height: 50%;
+  width: 50vh;
+  background-color: red;
 }

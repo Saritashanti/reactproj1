@@ -1,0 +1,35 @@
+          //  </form>
+          // <form className="cal" name="form">
+
+
+
+              style={{
+                width: "300px",
+                height: "100px",
+                padding: "5px",
+                backgroundColor: "white",
+                boxShadow: "1px, 1px, 1px, 1px",
+              }}
+  constructor() {
+    super();
+    this.state = {
+      users: null,
+    };
+  }
+  componentDidMount() {
+    fetch("https://jsonplaceholder.typicode.com/todos/").then((resp) => {
+      resp.json().then((result) => {
+        console.log(result.data)
+        // this.setState({ users: result.data });
+      });
+    });
+  }
+--{item.first_name} {item.first_name} {item.first_name}
+
+            {this.state.users
+              ? this.state.users.map((item, i) => (
+                  <div>
+                    <p>{i}</p>
+                  </div>
+                ))
+              : null}
